@@ -1,6 +1,10 @@
+body {
+  background-color: #303030;
+}
+
 .portfolio-header {
   position: relative;
-  background-image: url(images/header-bg.jpg);
+  background-color: #212121;
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -11,7 +15,7 @@
 }
 
 .mdl-layout__title {
-  font-size: 14px;
+  color: #E8E8E8;
   text-align: center;
   font-weight: 300;
 }
@@ -28,17 +32,35 @@
   min-height: auto;
 }
 
-.portfolio-logo {
-  background: url(images/logo.png) 50% no-repeat;
-  background-size: cover;
-  height: 150px;
-  width: 150px;
-  margin: auto auto 10px;
+@media (min-width: 600px) {
+  .portfolio-logo {
+    background: url(assets/images/logo.png) 50% no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 500px;
+    margin: auto auto 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-logo {
+    background: url(assets/images/logo.png) 50% no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 250px;
+    margin: auto auto 10px;
+    margin-top: 7px;
+  }
+
+  .portfolio-logo-row {
+    min-height: 100px;
+  }
+
 }
 
 .is-compact .portfolio-logo {
   height: 50px;
-  width: 50px;
+  width: 250px;
   margin-top: 7px;
 }
 
@@ -59,6 +81,7 @@
       -ms-flex: 1;
           flex: 1;
   line-height: 42px;
+  color: #E8E8E8;
 }
 
 .portfolio-header .mdl-layout__drawer-button {
@@ -82,12 +105,28 @@
   left: 15%;
 }
 
+.portfolio-card {
+  background-color: #424242;
+}
 .portfolio-card .mdl-card__title {
   padding-bottom: 0;
+  color: #fff;
 }
 
-.portfolio-blog-card-full-bg {
-  background: url(images/example-blog03.jpg) center / cover;
+.mdl-card {
+  background: #424242;
+}
+
+.mdl-card__title-text {
+  color: #fff;
+}
+
+h3, h4 {
+  color: #fff;
+}
+
+/*.portfolio-blog-card-full-bg {
+  background: url(assets/images/example-blog03.jpg) center / cover;
 }
 
 .portfolio-blog-card-event-bg {
@@ -96,7 +135,7 @@
 
 .portfolio-blog-card-strip-bg {
   background: url(images/example-blog06.jpg) center / cover;
-}
+}*/
 
 .portfolio-blog-card-compact .mdl-card__title {
   padding-bottom: 0;
@@ -124,7 +163,7 @@ img.article-image {
 }
 
 .portfolio-copy {
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .no-padding {
@@ -168,12 +207,47 @@ img.article-image {
   margin: auto;
 }
 
-footer {
-  background-image: url(images/footer-background.png);
-  background-size: cover;
+.mdl-mini-footer {
+  background-color: #212121;
 }
 
 .mdl-card__supporting-text {
-  color: black;
+  color: #E8E8E8;
 }
 
+/* Card title */
+.card-title {
+  color: #fff;
+  margin: 15px;
+}
+
+/* button spacing */
+.download-button1 {
+  padding: 0px 0px 20px 0px;
+}
+
+.download-button2 {
+  padding: 0px 0px 20px 0px;
+}
+
+.download-button1 .mdl-button--raised.mdl-button--colored {
+  color: #E8E8E8;
+  background-color: red;
+}
+
+.download-button2 .mdl-button--raised.mdl-button--colored {
+  color: #E8E8E8;
+  background-color: blue;
+}
+
+p, ul {
+  font-size: 15px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.projects-list {
+  margin-top: 10px;
+}
