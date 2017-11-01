@@ -42,6 +42,7 @@ body {
   }
 }
 
+/* Small Screen */
 @media (max-width: 600px) {
   .portfolio-logo {
     background: url(assets/images/logo.png) 50% no-repeat;
@@ -54,6 +55,10 @@ body {
 
   .portfolio-logo-row {
     min-height: 100px;
+  }
+
+  .mdl-layout__title {
+    font-size: 14px;
   }
 
 }
@@ -250,4 +255,24 @@ p, ul {
 
 .projects-list {
   margin-top: 10px;
+}
+
+i {
+  color: #fff;
+}
+
+.linkedin {
+  background-color: #0e76a8;
+}
+
+.github {
+  background-color: #333;
+}
+
+.gmail {
+  background-color: #e93f2e;
+}
+
+.read-more {
+  color: #E8E8E8;
 }
